@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dhunki A Cappella - a premier South Asian a cappella team based at the University of Texas at Dallas">
+    <meta name="keywords" content="A Cappella, South Asian Music, Dhunki, UT Dallas, Competitions, Music Team">
+    <title>Dhunki A Cappella - Team</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Calibri', sans-serif;
+            overflow-x: hidden;
+            background-color: #181923;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #ceb992;
+            padding: 10px 0;
+            z-index: 10;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-bar ul li {
+            margin: 0 20px;
+        }
+
+        .nav-bar ul li a {
+            text-decoration: none;
+            color: #510001;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-bar ul li a:hover {
+            color: #181923;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Sliding Gallery Section */
+        .sliding-gallery {
+            width: 56%; 
+            margin: 120px auto 50px auto;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .gallery-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .gallery-item {
+            min-width: 100%;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto; 
+            object-fit: cover; 
+            border-radius: 10px;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            z-index: 1;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* 3x3 Gallery */
+        .gallery-section {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%; 
+        }
+
+        .gallery-item-3x3 {
+            background-color: #ceb992;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .gallery-item-3x3 img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .gallery-item-3x3 h3 {
+            color: #510001;
+            margin-bottom: 10px;
+        }
+
+        .gallery-item-3x3 p {
+            color: #510001;
+            font-size: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="competitions.html">Competitions</a></li>
+            <li><a href="auditions.html">Auditions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Sliding Gallery -->
+    <div class="sliding-gallery">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="gallery-wrapper" id="gallery">
+            <div class="gallery-item"><img src="captains.jpg" alt="Captains"></div>
+            <div class="gallery-item"><img src="exec.jpg" alt="Executive Team"></div>
+            <div class="gallery-item"><img src="girls.jpg" alt="Girls"></div>
+            <div class="gallery-item"><img src="guys.jpg" alt="Guys"></div>
+            <div class="gallery-item"><img src="sopranos.jpg" alt="Sopranos"></div>
+            <div class="gallery-item"><img src="altos.jpg" alt="Altos"></div>
+            <div class="gallery-item"><img src="tenors.jpg" alt="Tenors"></div>
+            <div class="gallery-item"><img src="baris.jpg" alt="Baritones"></div>
+            <div class="gallery-item"><img src="bassbbx.jpg" alt="Basses"></div>
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- Girls' Section -->
+    <div class="gallery-section">
+        <div class="gallery-grid">
+            <!-- Placeholder items for the 3x3 gallery -->
+            <div class="gallery-item-3x3">
+                <img src="anoushka.jpg" alt="Anoushka">
+                <h3>Anoushka Majumdar</h3>
+                <p><i>Soprano</i></p>
+                <p>I’m Anoushka and I’m one of the captains of Dhunki. I’ve been on Dhunki for 4 years, and I’m graduating in December with a bachelor’s degree in Finance. After graduating, I’ll be working full-time in Chicago at PwC! Aside from Dhunki, I’m involved in several other on-campus organizations such as the Professional Program in Finance, UTD Akshaya Patra, the Investment Management Club, and most recently the French club! In my free time, I love to watch Law & Order, read, or play Super Smash Bros with my friends.</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="siya.jpg" alt="Siya">
+                <h3>Siya Desai</h3>
+                <p><i>Soprano</i></p>
+                <p>Hi, I’m Siya, a molecular bio major on the pre-med track! I’m currently a freshman, and it’s my first year on the team. I’ve had both choral and pop training for 10 years now, and I am stepping into something new by singing South Asian music with Dhunki! Other than singing, I love occupying my time by playing video games, cooking, painting, and playing with my dog Rocky. I can’t wait for a great season this year!</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="devanshi.jpg" alt="Devanshi">
+                <h3>Devanshi Verma</h3>
+                <p><i>Soprano</i></p>
+                <p>Hi! My name is Devanshi Verma and this is my 3rd year on dhunki. I have my Visharad degree in Hindustani classical music and was in choir throughout school. My favorite part of being on the team is traveling with everyone!</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="vyshnavi.jpg" alt="Vysh">
+                <h3>Vyshnavi Poruri</h3>
+                <p><i>Soprano</i></p>
+                <p>Hi! My name is Vyshnavi, and I am a junior neuroscience major on the premed track! This is my second year on Dhunki. I’m so excited to learn and perform our set for comp season! I love trying new food places and watching horror movies in my free time.</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="ananda.jpg" alt="Ananda">
+                <h3>Ananda Ghoshal</h3>
+                <p><i>Alto</i></p>
+                <p>Hey! My name is Ananda and I'm a senior majoring in Economics! This is my third year on the team and second year on exec as Finance Director! I'm so excited to travel to new places this year and compete with a completely new set. I played piano growing up and was in choir all throughout school. In my free time I love binge watching Doctor Who, any crime series, or Ben 10 - there really isn't an in between.</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="nidhi.jpg" alt="Nidhi">
+                <h3>Nidhi Joshi</h3>
+                <p><i>Alto</i></p>
+                <p>Hi I'm Nidhi and I'm a senior majoring in Finance. This is my second year on the team and I am also the Creative Arts Director! I'm really excited to see what the competitive season brings us this year!</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="varsha.jpg" alt="Varsha">
+                <h3>Varsha Janumpally</h3>
+                <p><i>Alto</i></p>
+                <p>Hey! I’m Varsha, a sophomore majoring in ITS. This will be my second year on Dhunki. My musical background is in Carnatic music, and I've also been trained in film music! One of my favorite memories from this past year was traveling to comp, and I’m so excited for this new season.</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="anjali.jpg" alt="Anjali">
+                <h3>Anjali Venkatachalam</h3>
+                <p><i>Alto</i></p>
+                <p>Hey guys, I’m Anjali and I’m a freshman comp sci major! I’ve been learning classical Indian vocal for 13 years now and recently picked up guitar. This is my first year on Dhunki and I’m super pumped for comp season and meeting new friends! In my free time you can catch me hiking new trails or watching reruns of modern family!</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="sindhu.jpg" alt="Sindhu">
+                <h3>Sindhu Koduri</h3>
+                <p><i>Alto</i></p>
+                <p>Hello! My name is Sindhu and I’m a sophomore majoring in Healthcare studies minoring in exercise science on the premed track! This is my first year in dhunki and I have been singing Carnatic music for 14 years and was in Choir for 8. I’m so excited for this new team, and making the best of memories all over the country with the most amazing people! In my free time I love working out, or playing volleyball, football, or pickleball.</p>
+            </div>
+        </div>
+    </div>
+     <!-- Guys' Section -->
+     <div class="gallery-section">
+        <div class="gallery-grid">
+            <!-- Placeholder items for the 3x3 gallery -->
+            <div class="gallery-item-3x3">
+                <img src="shashank.jpg" alt="Shashank">
+                <h3>Shashank Bhagavatula</h3>
+                <p><i>Tenor</i></p>
+                <p>Hey guys! My name is Shashank and I'm a Biology major on the pre-med track. This is my fourth year on Dhunki and my second year as Captain. Musically, I've been singing Carnatic and playing the piano for the past 15 years. When I'm not at Dhunki, I spend time with my German Shepard, watch movies and sports (MFFL), work out, and play basketball. I can't wait for the upcoming year and competition season to add lifelong memories alongside a great group of people! </p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="tanav.jpg" alt="Tanav">
+                <h3>Tanav Chachad</h3>
+                <p><i>Tenor</i></p>
+                <p>Hi! My name is Tanav and I am a junior neuroscience major on the pre-medical track. I am the music director for Dhunki and have been on the team for three years. I also have been singing and playing various instruments for the past 16 years. Some of my hobbies include powerlifting, trying new foods, and playing basketball.</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="ritul.jpg" alt="Ritul">
+                <h3>Ritul Nagamanickam</h3>
+                <p><i>Tenor</i></p>
+                <p>Hey guys! I’m ritul and this is my second year on the team! I’m a sophomore and I love to sing. I’m also in a fraternity and love to play chess. I’m Super excited for this competition season!</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="kevin.jpg" alt="Kevin">
+                <h3>Kevin Jose</h3>
+                <p><i>Tenor</i></p>
+                <p>Hello! My name is Kevin and I am a senior at UTD studying Information Technology & Systems. In terms of my past music experiences, I learned carnatic music for a couple years in elementary school and besides that, have learned singing/a cappella by ear. This is my 4th year on Dhunki, and I am incredibly excited to compete, travel, eat and pull all-nighters with the team! When I’m not with my fellow Dhunkids, you can find me cutting hair for my business or riding my longboard around campus!</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="akash.jpg" alt="Akash">
+                <h3>Akash Jayakumar</h3>
+                <p><i>Baritone</i></p>
+                <p>Hi! My name is Akash and I am a junior studying computer science! This is my first year  on Dhunki and I have been learning Carnatic music for over 10 years. I am an aspiring musical artist as well and hopefully you’ll find me on Spotify soon. In my free time I love playing basketball or watching anime or Netflix.</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="sahil.jpg" alt="Sahil">
+                <h3>Sahil Lalani</h3>
+                <p><i>Baritone</i></p>
+                <p>Heyo, my name is Sahil Lalani and I’m a newbie on Dhunki for the 2024 year! I’m a sophomore majoring in business admin with a concentration in entrepreneurship and innovation and I’ve been singing infront of people my entire life. I’m big into fashion, content creation, startup companies, photography, film, modeling, FOOD, and obviously singing!! I am so excited to be a part of Dhunki and can’t wait for comp season.</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="ashwin.jpg" alt="Ashwin">
+                <h3>Ashwin Krishnan</h3>
+                <p><i>Bass</i></p>
+                <p>Hi, I'm Ashwin Krishnan and I'm a senior Biomedical Engineering major. This is my third year on the team.</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="arjun.jpg" alt="Arjun">
+                <h3>Arjun Krishnan</h3>
+                <p><i>Bass</i></p>
+                <p>Hi, I’m Arjun Krishnan and I’m a freshman at UTD. I am majoring in Computer Science and this is my first year in Dhunki.</p>
+            </div>
+            <div class="gallery-item-3x3">
+                <img src="pranav.jpg" alt="Pranav">
+                <h3>Pranav Kumar</h3>
+                <p><i>Beatboxer</i></p>
+                <p>Hello! I'm this year's beatboxer, Pranav. I am a senior and this is my first year on the team!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 Dhunki A Cappella. All Rights Reserved.
+    </div>
+
+    <script>
+        let currentIndex = 0;
+
+        function moveSlide(direction) {
+            const gallery = document.getElementById('gallery');
+            const items = document.querySelectorAll('.gallery-item');
+            const totalItems = items.length;
+
+            currentIndex = (currentIndex + direction + totalItems) % totalItems;
+
+            const offset = -currentIndex * 100;
+            gallery.style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+</body>
+</html>

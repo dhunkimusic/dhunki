@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Dhunki A Cappella">
+    <meta name="keywords" content="A Cappella, Contact, Dhunki, UT Dallas">
+    <title>Wanna talk to us?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Calibri', sans-serif;
+            overflow-x: hidden;
+            background-color: #181923;
+        }
+
+        .nav-bar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+            background-color: #ceb992;
+            padding: 10px 0;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-bar ul li {
+            margin: 0 20px;
+        }
+
+        .nav-bar ul li a {
+            text-decoration: none;
+            color: #510001;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-bar ul li a:hover {
+            color: #181923;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            position: relative;
+            background-image: url('contact3.jpg'); 
+            background-size: cover; 
+            background-position: top; 
+            height: 400px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+        }
+
+        .hero-text {
+            font-size: 5rem; 
+            font-weight: bold;
+            font-style: italic;
+            color: #800000; 
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            text-align: center; 
+            z-index: 1; 
+            letter-spacing: 0.1em; 
+        }
+
+        .description {
+            font-size: 1.5rem;
+            color: #fff;
+            padding: 0 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 20px;
+        }
+
+        .contact-form {
+            padding: 30px; 
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            max-width: 400px; 
+            width: 100%; 
+            margin-left: 20px;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #510001;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            background-color: #800000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #510001;
+            transform: translateY(-3px);
+        }
+
+        .gallery {
+            position: relative;
+            width: 60%; 
+            height: auto; 
+            max-height: 400px;
+            overflow: hidden; 
+            margin-right: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0; 
+            transition: opacity 1s ease-in-out; 
+        }
+
+        .gallery img.active {
+            opacity: 1; 
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            z-index: 1;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 4rem; 
+            }
+
+            .description {
+                font-size: 1.2rem; 
+            }
+
+            .contact-form {
+                width: 90%; 
+            }
+
+            .gallery {
+                width: 100%; 
+                max-height: 250px; 
+            }
+
+            .container {
+                flex-direction: column; 
+                align-items: center; 
+            }
+
+            .contact-form {
+                margin-left: 0; 
+                margin-top: 20px; 
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.gallery img');
+            let currentImageIndex = 0;
+
+            images[currentImageIndex].classList.add('active'); 
+
+            setInterval(() => {
+                images[currentImageIndex].classList.remove('active'); 
+                currentImageIndex = (currentImageIndex + 1) % images.length; 
+                images[currentImageIndex].classList.add('active'); 
+            }, 3000); // Changes the image every 3 seconds!!!
+        });
+    </script>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="about.html">About</a></li> 
+            <li><a href="team.html">Team</a></li>
+            <li><a href="competitions.html">Competitions</a></li>
+            <li><a href="auditions.html">Auditions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <div class="overlay"></div> 
+        <div class="hero-text">Wanna talk to us?</div>
+        <div class="description">
+            Follow us on Instagram: @dhunkimusic
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="gallery">
+            <img src="contact1.jpg" class="active" alt="Contact Image 1">
+            <img src="contact2.jpg" alt="Contact Image 2">
+            <img src="contact4.jpg" alt="Contact Image 4">
+            <img src="contact5.jpg" alt="Contact Image 5">
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="https://formsubmit.co/dhunimusic@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Dhunki A Cappella. All rights reserved.
+    </div>
+</body>
+</html>

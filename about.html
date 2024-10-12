@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dhunki A Cappella - a premier South Asian a cappella team based at the University of Texas at Dallas">
+    <meta name="keywords" content="A Cappella, South Asian Music, Dhunki, UT Dallas, Competitions, Music Team">
+    <title>About Dhunki A Cappella</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Calibri', sans-serif;
+            overflow: hidden;
+        }
+
+        .nav-bar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+            background-color: #ceb992; /* Khaki */
+            padding: 10px 0;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-bar ul li {
+            margin: 0 20px;
+        }
+
+        .nav-bar ul li a {
+            text-decoration: none;
+            color: #510001; /* Rosewood */
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-bar ul li a:hover {
+            color: #181923; /* Raisin Black */
+        }
+
+        .nav-bar ul li.active a {
+            color: #181923; /* Raisin Black for active link */
+            font-weight: bold; /* Emphasize the active link */
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('fulldhunki2024.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(24, 25, 35, 0.7); 
+        }
+
+        .about-title {
+            font-size: 5rem;
+            font-weight: bold;
+            font-style: italic;
+            background: linear-gradient(to right, #800000, #510001);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0 #c2c1c2, 3px 3px 0 #181923;
+            z-index: 1;
+        }
+
+        .about-description {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 800px;
+            color: #c2c1c2; /* Silver text */
+            z-index: 1;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: #c2c1c2; /* Silver */
+            font-size: 0.9rem;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li class="active"><a href="about.html">About</a></li> 
+            <li><a href="team.html">Team</a></li>
+            <li><a href="competitions.html">Competitions</a></li>
+            <li><a href="auditions.html">Auditions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="image-container">
+        <div class="overlay"></div> 
+        <div class="about-title">About Us</div>
+        <div class="about-description">
+            Hello! Dhunki is The University of Texas at Dallas' premier South Asian a cappella team. We compete nationally to qualify for the South Asian a cappella circuit’s prestigious national competition. While we strive for musical excellence, we also believe in giving back to our community, which has supported us in so many ways by performing at various events such as weddings and cultural events inside and outside the university.
+        </div>
+        <div class="footer">
+            &copy; 2024 Dhunki A Cappella. All Rights Reserved.
+        </div>
+    </div>
+
+</body>
+</html> 
