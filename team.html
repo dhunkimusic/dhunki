@@ -113,23 +113,35 @@
         /* 3x3 Gallery */
         .gallery-section {
             display: flex;
-            justify-content: center;
-            margin: 50px 0;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .gallery-section h2 {
+            color: #ceb992;
+            margin-bottom: 15px;
         }
 
         .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            width: 80%; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            width: 80%;
         }
 
         .gallery-item-3x3 {
             background-color: #ceb992;
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            flex: 1 1 calc(33.33% - 15px);
+            max-width: calc(33.33% - 15px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .gallery-item-3x3 img {
@@ -139,20 +151,22 @@
             margin-bottom: 10px;
         }
 
-        .gallery-item-3x3 h3 {
+        .gallery-item-3x3 h3, .gallery-item-3x3 h4 {
             color: #510001;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         .gallery-item-3x3 p {
             color: #510001;
-            font-size: 1rem;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            text-align: center;
         }
 
         .footer {
             text-align: center;
             color: white;
-            margin-top: 50px;
+            margin-top: 30px;
             font-size: 0.9rem;
         }
     </style>
@@ -188,16 +202,28 @@
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
 
+     <!-- CAPS Section -->
+      <div class="gallery-section">
+        <h2>CAPTAINS</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item-3x3"><img src="anoushka.jpg" alt="Anoushka"><h3>Anoushka Majumdar</h3><p><i>Soprano</i></p><p>I’m Anoushka and I’m one of the captains of Dhunki. I’ve been on Dhunki for 4 years, and I’m graduating in December with a bachelor’s degree in Finance. After graduating, I’ll be working full-time in Chicago at PwC! Aside from Dhunki, I’m involved in several other on-campus organizations such as the Professional Program in Finance, UTD Akshaya Patra, the Investment Management Club, and most recently the French club! In my free time, I love to watch Law & Order, read, or play Super Smash Bros with my friends.</p></div>
+            <div class="gallery-item-3x3"><img src="devanshi.jpg" alt="Devanshi"><h3>Devanshi Verma</h3><p><i>Soprano</i></p><p>Hi, I’m Devanshi one of the captains of dhunki!! This is my third year on the team and I am a biology major with a music minor. For my musical background, I have my Visharad degree in Hindustani classical music and was in choir throughout school. Aside from Dhunki, I am a part of FeelGood and Awaazein. In my free time I love dancing, gymnastics, and working out. My favorite part of being on the team is traveling with everyone. I am super excited for this year’s comp season!</p></div>
+            <div class="gallery-item-3x3"><img src="shashank.jpg" alt="Shashank"><h3>Shashank Bhagavatula</h3><p><i>Tenor</i></p><p>Hey guys! My name is Shashank and I'm a Biology major on the pre-med track. This is my fourth year on Dhunki and my second year as Captain. Musically, I've been singing Carnatic and playing the piano for the past 15 years. When I'm not at Dhunki, I spend time with my German Shepard, watch movies and sports (MFFL), work out, and play basketball. I can't wait for the upcoming year and competition season to add lifelong memories alongside a great group of people!</p></div>
+        </div>
+    </div>
+    <!-- EXEC Section -->
+    <div class="gallery-section">
+        <h2>EXECUTIVE TEAM</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item-3x3"><img src="ananda.jpg" alt="Ananda"><h3>Ananda Ghoshal</h3><h4>Finance Director</h4><p><i>Alto</i></p><p>Hey! My name is Ananda and I'm a senior majoring in Economics! This is my third year on the team and second year on exec as Finance Director! I'm so excited to travel to new places this year and compete with a completely new set. I played piano growing up and was in choir all throughout school. In my free time I love binge watching Doctor Who, any crime series, or Ben 10 - there really isn't an in between.</p></div>
+            <div class="gallery-item-3x3"><img src="tanav.jpg" alt="Tanav"><h3>Tanav Chachad</h3><h4>Music Director</h4><p><i>Tenor</i></p><p>Hi! My name is Tanav and I am a junior neuroscience major on the pre-medical track. I am the music director for Dhunki and have been on the team for three years. I also have been singing and playing various instruments for the past 16 years. Some of my hobbies include powerlifting, trying new foods, and playing basketball.</p></div>
+            <div class="gallery-item-3x3"><img src="varsha.jpg" alt="Varsha"><h3>Varsha Janumpally</h3><h4>Logistics Director</h4><p><i>Alto</i></p><p>Hey! I’m Varsha, a sophomore majoring in ITS. This will be my second year on Dhunki. My musical background is in Carnatic music, and I've also been trained in film music! One of my favorite memories from this past year was traveling to comp, and I’m so excited for this new season.</p></div>
+            <div class="gallery-item-3x3"><img src="nidhi.jpg" alt="Nidhi"><h3>Nidhi Joshi</h3><h4>Creative Director</h4><p><i>Alto</i></p><p>Hi I'm Nidhi and I'm a senior majoring in Finance. This is my second year on the team and I am also the Creative Arts Director! I'm really excited to see what the competitive season brings us this year!</p></div>
+      </div>
+
     <!-- Girls' Section -->
     <div class="gallery-section">
         <div class="gallery-grid">
-            <!-- Placeholder items for the 3x3 gallery -->
-            <div class="gallery-item-3x3">
-                <img src="anoushka.jpg" alt="Anoushka">
-                <h3>Anoushka Majumdar</h3>
-                <p><i>Soprano</i></p>
-                <p>I’m Anoushka and I’m one of the captains of Dhunki. I’ve been on Dhunki for 4 years, and I’m graduating in December with a bachelor’s degree in Finance. After graduating, I’ll be working full-time in Chicago at PwC! Aside from Dhunki, I’m involved in several other on-campus organizations such as the Professional Program in Finance, UTD Akshaya Patra, the Investment Management Club, and most recently the French club! In my free time, I love to watch Law & Order, read, or play Super Smash Bros with my friends.</p>
-            </div>
             <div class="gallery-item-3x3">
                 <img src="siya.jpg" alt="Siya">
                 <h3>Siya Desai</h3>
@@ -205,34 +231,10 @@
                 <p>Hi, I’m Siya, a molecular bio major on the pre-med track! I’m currently a freshman, and it’s my first year on the team. I’ve had both choral and pop training for 10 years now, and I am stepping into something new by singing South Asian music with Dhunki! Other than singing, I love occupying my time by playing video games, cooking, painting, and playing with my dog Rocky. I can’t wait for a great season this year!</p>
             </div>
             <div class="gallery-item-3x3">
-                <img src="devanshi.jpg" alt="Devanshi">
-                <h3>Devanshi Verma</h3>
-                <p><i>Soprano</i></p>
-                <p>Hi, I’m Devanshi one of the captains of dhunki!! This is my third year on the team and I am a biology major with a music minor. For my musical background, I have my Visharad degree in Hindustani classical music and was in choir throughout school. Aside from Dhunki, I am a part of FeelGood and Awaazein. In my free time I love dancing, gymnastics, and working out. My favorite part of being on the team is traveling with everyone. I am super excited for this year’s comp season!</p>
-            </div>
-            <div class="gallery-item-3x3">
                 <img src="vyshnavi.jpg" alt="Vysh">
                 <h3>Vyshnavi Poruri</h3>
                 <p><i>Soprano</i></p>
                 <p>Hi! My name is Vyshnavi, and I am a junior neuroscience major on the premed track! This is my second year on Dhunki. I’m so excited to learn and perform our set for comp season! I love trying new food places and watching horror movies in my free time.</p>
-            </div>
-            <div class="gallery-item-3x3">
-                <img src="ananda.jpg" alt="Ananda">
-                <h3>Ananda Ghoshal</h3>
-                <p><i>Alto</i></p>
-                <p>Hey! My name is Ananda and I'm a senior majoring in Economics! This is my third year on the team and second year on exec as Finance Director! I'm so excited to travel to new places this year and compete with a completely new set. I played piano growing up and was in choir all throughout school. In my free time I love binge watching Doctor Who, any crime series, or Ben 10 - there really isn't an in between.</p>
-            </div>
-            <div class="gallery-item-3x3">
-                <img src="nidhi.jpg" alt="Nidhi">
-                <h3>Nidhi Joshi</h3>
-                <p><i>Alto</i></p>
-                <p>Hi I'm Nidhi and I'm a senior majoring in Finance. This is my second year on the team and I am also the Creative Arts Director! I'm really excited to see what the competitive season brings us this year!</p>
-            </div>
-            <div class="gallery-item-3x3">
-                <img src="varsha.jpg" alt="Varsha">
-                <h3>Varsha Janumpally</h3>
-                <p><i>Alto</i></p>
-                <p>Hey! I’m Varsha, a sophomore majoring in ITS. This will be my second year on Dhunki. My musical background is in Carnatic music, and I've also been trained in film music! One of my favorite memories from this past year was traveling to comp, and I’m so excited for this new season.</p>
             </div>
             <div class="gallery-item-3x3">
                 <img src="anjali.jpg" alt="Anjali">
@@ -252,18 +254,6 @@
      <div class="gallery-section">
         <div class="gallery-grid">
             <!-- Placeholder items for the 3x3 gallery -->
-            <div class="gallery-item-3x3">
-                <img src="shashank.jpg" alt="Shashank">
-                <h3>Shashank Bhagavatula</h3>
-                <p><i>Tenor</i></p>
-                <p>Hey guys! My name is Shashank and I'm a Biology major on the pre-med track. This is my fourth year on Dhunki and my second year as Captain. Musically, I've been singing Carnatic and playing the piano for the past 15 years. When I'm not at Dhunki, I spend time with my German Shepard, watch movies and sports (MFFL), work out, and play basketball. I can't wait for the upcoming year and competition season to add lifelong memories alongside a great group of people! </p>
-            </div>
-            <div class="gallery-item-3x3">
-                <img src="tanav.jpg" alt="Tanav">
-                <h3>Tanav Chachad</h3>
-                <p><i>Tenor</i></p>
-                <p>Hi! My name is Tanav and I am a junior neuroscience major on the pre-medical track. I am the music director for Dhunki and have been on the team for three years. I also have been singing and playing various instruments for the past 16 years. Some of my hobbies include powerlifting, trying new foods, and playing basketball.</p>
-            </div>
             <div class="gallery-item-3x3">
                 <img src="ritul.jpg" alt="Ritul">
                 <h3>Ritul Nagamanickam</h3>
