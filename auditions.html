@@ -1,145 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dhunki A Cappella - Audition Information">
-    <meta name="keywords" content="A Cappella, Auditions, Dhunki, UT Dallas">
-    <title>OH NO! Don't hurt us!</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Audition for Dhunki A Cappella - UT Dallas' premier South Asian a cappella team" />
+  <meta name="keywords" content="A Cappella, Auditions, Dhunki, UT Dallas" />
+  <title>Auditions | Dhunki A Cappella</title>
 
-        body, html {
-            height: 100%;
-            font-family: 'Calibri', sans-serif;
-            overflow-x: hidden;
-            background-color: #181923;
-        }
+  <!-- Bootstrap CSS & JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 
-        .nav-bar {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            z-index: 2;
-            background-color: #ceb992;
-            padding: 10px 0;
-        }
-
-        .nav-bar ul {
-            list-style: none;
-            display: flex;
-        }
-
-        .nav-bar ul li {
-            margin: 0 20px;
-        }
-
-        .nav-bar ul li a {
-            text-decoration: none;
-            color: #510001;
-            font-size: 1.4rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            padding: 10px 20px;
-            transition: color 0.3s ease;
-        }
-
-        .nav-bar ul li a:hover {
-            color: #181923;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .image-container {
-            position: relative;
-            width: 100%;
-            height: 100vh; 
-            background-image: url('captains2.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start; 
-            align-items: center;
-            text-align: center;
-            overflow: hidden; 
-            filter: brightness(0.7);
-            margin-top: 60px;
-        }
-
-        .hero-text {
-            font-size: 5rem;
-            font-weight: bold;
-            font-style: italic;
-            background: linear-gradient(to right, #800000, #510001);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-top: 50px; 
-            text-shadow: 2px 2px 0 #181923, 3px 3px 0 #c2c1c2;
-            animation: fadeIn 1s ease-in-out;
-            z-index: 1;
-            transition: transform 0.3s ease;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .description {
-            font-size: 2rem;
-            color: #fff;
-            margin-top: 100px; 
-            padding: 0 20px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
-            z-index: 1;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .footer {
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
-            text-align: center;
-            color: white;
-            z-index: 1;
-            font-size: 0.9rem;
-        }
-    </style>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="auditions.css" />
 </head>
 <body>
 
-    <div class="nav-bar">
-        <ul>
-            <li><a href="index.html">Home</a></li> 
-            <li><a href="about.html">About</a></li> 
-            <li><a href="team.html">Team</a></li>
-            <li><a href="competitions.html">Competitions</a></li>
-            <li><a href="auditions.html">Auditions</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-
-    <div class="image-container">
-        <div class="hero-text">
-            OH NO! Don't hurt us!
-        </div>
-        <div class="description">
-            Details for the 2025-2026 auditions have not yet been released yet! Check back in Spring 2025!
-        </div>
-    </div>
-
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md nav-bar">
+      <div class="container-fluid justify-content-between align-items-center">
+        <!-- Toggler on the LEFT -->
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
     
+        <!-- Brand in the CENTER -->
+        <a class="navbar-brand mx-auto text-center" href="../index.html">
+          <span class="fw-bold text-uppercase" style="color: #510001;">Dhunki</span>
+        </a>
+    
+        <!-- Invisible right spacer -->
+        <div class="d-md-none me-2" style="width: 36px;"></div>
+    
+        <!-- Collapsible nav links -->
+        <div class="collapse navbar-collapse justify-content-center mt-2 mt-md-0" id="navbarNav">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item mx-2"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="../about/about.html">About</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="../team/team.html">Team</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="../competitions/competitions.html">Competitions</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="..auditions/auditions.html">Auditions</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="../contact/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+  <!-- Hero Section -->
+  <section class="auditions-hero text-center text-light">
+    <div class="container py-5">
+      <h1 class="auditions-title mb-4">Audition for Dhunki</h1>
+      <p class="auditions-description mx-auto">
+        Think you've got what it takes? Dhunki is always looking for passionate singers, beatboxers, and music lovers to join our team! Whether you have years of experience or are new to a cappella, we’d love to hear from you.
+      </p>
+      <p class="auditions-description mx-auto">
+        Auditions typically happen at the beginning of the Fall semester. For updates on dates, requirements, and sign-up info, you can follow us on Instagram @dhunkimusic, or, you can check back here!
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-3">
+    &copy; 2024 Dhunki A Cappella. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
