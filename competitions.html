@@ -1,227 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dhunki A Cappella - Competitions">
-    <meta name="keywords" content="Competitions, Awards, Dhunki, A Cappella, Music Team">
-    <title>Dhunki A Cappella - Competitions</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body, html {
-            height: 100%;
-            font-family: 'Calibri', sans-serif;
-            overflow-x: hidden;
-            background-color: #181923;
-            color: #fff; 
-        }
-
-        .nav-bar {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            z-index: 2;
-            background-color: #ceb992;
-            padding: 10px 0;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .nav-bar ul {
-            list-style: none;
-            display: flex;
-        }
-
-        .nav-bar ul li {
-            margin: 0 20px;
-        }
-
-        .nav-bar ul li a {
-            text-decoration: none;
-            color: #510001;
-            font-size: 1.4rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            padding: 10px 20px;
-        }
-
-        .nav-bar ul li a:hover {
-            color: #181923;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .hero-section {
-            position: relative;
-            width: 100%;
-            height: 80vh;
-            background-image: url('dhunkicomp1.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            overflow: hidden;
-            filter: brightness(0.6);
-            z-index: 1;
-        }
-
-        .hero-title {
-            font-size: 7rem;
-            font-weight: bold;
-            font-style: italic;
-            background: linear-gradient(to right, #800000, #510001);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            text-shadow: 2px 2px 0 #181923, 3px 3px 0 #c2c1c2;
-            z-index: 2;
-            margin-top: 0%; 
-            margin-bottom: 20px; 
-        }
-
-        .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0; 
-            background-color: rgba(194, 193, 194, 0.8); 
-            width: 100%; 
-            max-width: 100%; 
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-        }
-
-        .video-section, .awards-section {
-            width: 100%; 
-            padding: 40px 20px;
-            background-color: rgba(255, 255, 255, 0.75); 
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            margin: 20px 0;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #510001;
-            margin-bottom: 20px;
-            text-align: center;
-            text-transform: uppercase;
-            border-bottom: 2px solid #800000;
-            padding-bottom: 10px;
-        }
-
-        .video {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .video iframe {
-            width: 100%;
-            height: 400px; 
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .video-title {
-            color: #000;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .footer {
-            text-align: center;
-            color: #fff;
-            font-size: 0.9rem;
-            padding: 20px;
-            background-color: #510001; 
-        }
-
-        .awards-section p {
-            color: #800000; 
-            margin: 10px 0; 
-        }
-
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dhunki A Cappella - Competitions" />
+  <meta name="keywords" content="Competitions, Awards, Dhunki, A Cappella, Music Team" />
+  <title>Dhunki A Cappella - Competitions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="competitions.css" />
 </head>
 <body>
 
-    <div class="nav-bar">
-        <ul>
-            <li><a href="index.html">Home</a></li> 
-            <li><a href="about.html">About</a></li> 
-            <li><a href="team.html">Team</a></li>
-            <li><a href="competitions.html">Competitions</a></li>
-            <li><a href="auditions.html">Auditions</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-
-    <div class="hero-section">
-        <div class="hero-title">Competitions</div>
-    </div>
-
-    <div class="content">
-        <div class="video-section">
-            <h2 class="section-title">A Sneak Peek Into our past seasons!</h2>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/XKDK1j42_4A?si=6LNPA0-ERlEaXh70" title="2022 All American Awaaz" allowfullscreen></iframe>
-                <p class="video-title">2022 All American Awaaz</p> 
-            </div>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/M-j9lW4A5TQ?si=HkpQ4WdZ4DffqFQe" title="2023 Anahat at UC Berkeley" allowfullscreen></iframe>
-                <p class="video-title">2023 Anahat at UC Berkeley</p> 
-            </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md nav-bar">
+        <div class="container-fluid justify-content-between align-items-center">
+          <!-- Toggler on the LEFT -->
+          <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Brand in the CENTER -->
+          <a class="navbar-brand mx-auto text-center" href="../index.html">
+            <span class="fw-bold text-uppercase" style="color: #510001;">Dhunki</span>
+          </a>
+      
+          <!-- Invisible right spacer -->
+          <div class="d-md-none me-2" style="width: 36px;"></div>
+      
+          <!-- Collapsible nav links -->
+          <div class="collapse navbar-collapse justify-content-center mt-2 mt-md-0" id="navbarNav">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item mx-2"><a class="nav-link" href="../index.html">Home</a></li>
+              <li class="nav-item mx-2"><a class="nav-link" href="../about/about.html">About</a></li>
+              <li class="nav-item mx-2"><a class="nav-link" href="../team/team.html">Team</a></li>
+              <li class="nav-item mx-2"><a class="nav-link" href="../competitions/competitions.html">Competitions</a></li>
+              <li class="nav-item mx-2"><a class="nav-link" href="..auditions/auditions.html">Auditions</a></li>
+              <li class="nav-item mx-2"><a class="nav-link" href="../contact/contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
-        
-        <div class="awards-section">
-            <h2 class="section-title">Awards</h2>
-            <p>(2025) Second Place - Buckeye Laya (Ohio State)</p>
-            <p>(2025) Best Soloist on a South Asian Song (Manavyalakinchara) at Buckeye Laya</p>
-            <br>
-            <p>(2024) Third Place - Jeena (UT Austin)</p>
-            <p>(2024) Outstanding Visual Performance at Jeena</p>
-            <p>(2024) Outstanding Vocal Percussion at Jeena</p>
-            <br>
-            <p>(2023) First Place - ICCA Southwest Quarterfinals</p>
-            <p>(2023) Best Arrangement (Manmohini Morey) at ICCA Southwest Quarterfinals</p>
-            <p>(2023) Second Place - Gathe Raho (University of Iowa)</p>
-            <p>(2023) Best Soloist on a South Asian Song (Apsara Aali) at Gathe Raho</p>
-            <p>(2023) First Place - Anahat (UC Berkeley)</p>
-            <p>(2023) Outstanding Visual Performance at Anahat</p>
-            <p>(2023) Outstanding Arrangement (Apsara Aali x Unholy) at Anahat</p>
-            <p>(2023) Outstanding Vocal Percussion at Anahat</p>
-            <br>
-            <p>(2022) First Place - All American Awaaz National Competition</p>
-            <p>(2022) Outstanding Visual Performance at The All American Awaaz National Competition</p>
-            <p>(2022) Second Place - Jeena (UT Austin)</p>
-            <br>
-            <p>(2019) First Place - Anahat (UC Berkeley)</p>
-            <p>(2019) Best Female Soloist at Anahat</p>
-            <p>(2019) Best Male Soloist at Anahat</p>
-            <br>
-            <p>(2018) First Place - Anahat (UC Berkeley)</p>
-            <p>(2018) Best Female Soloist at Anahat</p>
-            <p>(2018) Outstanding Vocal Percussion at Anahat</p>
-            <br>
-            <p>(2017) First Place - Anahat (UC Berkeley)</p>
-            <br>
-            <p>(2015) First Place - Anahat (UC Berkeley)</p>
+      </nav>
+      
+  <!-- Hero Section -->
+  <header class="hero-section d-flex justify-content-center align-items-center text-center">
+    <h1 class="hero-title">Competitions</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
+      <!-- Video Section -->
+      <section class="mb-5">
+        <h2 class="section-title text-center">A Sneak Peek Into Our Past Seasons!</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-lg-6">
+            <div class="video-wrapper">
+              <iframe class="w-100 rounded shadow-sm" height="315" src="https://www.youtube.com/embed/XKDK1j42_4A?si=6LNPA0-ERlEaXh70" allowfullscreen></iframe>
+              <p class="video-title mt-2 text-center">2022 All American Awaaz</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="video-wrapper">
+              <iframe class="w-100 rounded shadow-sm" height="315" src="https://www.youtube.com/embed/M-j9lW4A5TQ?si=HkpQ4WdZ4DffqFQe" allowfullscreen></iframe>
+              <p class="video-title mt-2 text-center">2023 Anahat at UC Berkeley</p>
+            </div>
+          </div>
         </div>
-    </div>
+      </section>
 
-    <div class="footer">
-        &copy; 2024 Dhunki A Cappella. All Rights Reserved.
+      <!-- Awards Section -->
+      <section>
+        <h2 class="section-title text-center">Awards</h2>
+        <div class="awards-list mx-auto px-3 px-md-5">
+          <ul class="list-unstyled">
+            <li>(2025) Outstanding Vocal Percussion at Rang de Raaga</li>
+            <li>(2025) Outstanding Visual Performance at Rang de Raaga Place</li>
+            <li>(2025) Second Place - Rang de Raaga (Virginia Commonwealth University)</li>
+            <li>(2025) Second Place - Buckeye Laya (Ohio State)</li>
+            <li>(2025) Best Soloist on a South Asian Song (Manavyalakinchara) at Buckeye Laya</li><br />
+            <li>(2024) Third Place - Jeena (UT Austin)</li>
+            <li>(2024) Outstanding Visual Performance at Jeena</li>
+            <li>(2024) Outstanding Vocal Percussion at Jeena</li><br />
+            <li>(2023) First Place - ICCA Southwest Quarterfinals</li>
+            <li>(2023) Best Arrangement (Manmohini Morey) at ICCA Southwest Quarterfinals</li>
+            <li>(2023) Second Place - Gathe Raho (University of Iowa)</li>
+            <li>(2023) Best Soloist on a South Asian Song (Apsara Aali) at Gathe Raho</li>
+            <li>(2023) First Place - Anahat (UC Berkeley)</li>
+            <li>(2023) Outstanding Visual Performance at Anahat</li>
+            <li>(2023) Outstanding Arrangement (Apsara Aali x Unholy) at Anahat</li>
+            <li>(2023) Outstanding Vocal Percussion at Anahat</li><br />
+            <li>(2022) First Place - All American Awaaz National Competition</li>
+            <li>(2022) Outstanding Visual Performance at The All American Awaaz National Competition</li>
+            <li>(2022) Second Place - Jeena (UT Austin)</li><br />
+            <li>(2019) First Place - Anahat (UC Berkeley)</li>
+            <li>(2019) Best Female Soloist at Anahat</li>
+            <li>(2019) Best Male Soloist at Anahat</li><br />
+            <li>(2018) First Place - Anahat (UC Berkeley)</li>
+            <li>(2018) Best Female Soloist at Anahat</li>
+            <li>(2018) Outstanding Vocal Percussion at Anahat</li><br />
+            <li>(2017) First Place - Anahat (UC Berkeley)</li><br />
+            <li>(2015) First Place - Anahat (UC Berkeley)</li>
+          </ul>
+        </div>
+      </section>
     </div>
+  </main>
 
+  <!-- Footer -->
+  <footer class="footer text-center py-3 mt-5">
+    &copy; 2024 Dhunki A Cappella. All Rights Reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
