@@ -30,7 +30,7 @@ body {
   /* Hero */
   .hero-section {
     height: 80vh;
-    background: url('../imgs/dhunkicomp1.jpg') center/cover no-repeat;
+    background: url('../dhunkicomp1.jpg') center/cover no-repeat;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   }
   
