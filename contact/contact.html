@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Contact Dhunki A Cappella"/>
+    <meta name="keywords" content="A Cappella, Contact, Dhunki, UT Dallas"/>
+    <title>Wanna talk to us?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+     <!-- Navbar -->
+  <nav class="navbar navbar-expand-md nav-bar">
+    <div class="container-fluid justify-content-between align-items-center">
+      <!-- Toggler on the LEFT -->
+      <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Brand in the CENTER -->
+      <a class="navbar-brand mx-auto text-center" href="../index.html">
+        <span class="fw-bold text-uppercase" style="color: #510001;">Dhunki</span>
+      </a>
+  
+      <!-- Invisible right spacer -->
+      <div class="d-md-none me-2" style="width: 36px;"></div>
+  
+      <!-- Collapsible nav links -->
+      <div class="collapse navbar-collapse justify-content-center mt-2 mt-md-0" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item mx-2"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="../about/about.html">About</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="../team/team.html">Team</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="../competitions/competitions.html">Competitions</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="..auditions/auditions.html">Auditions</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="../contact/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+    <header class="header d-flex align-items-center justify-content-center text-center text-white">
+        <div class="overlay"></div>
+        <div class="z-1">
+            <h1 class="display-4 fw-bold fst-italic text-maroon">Wanna talk to us?</h1>
+            <p class="lead text-white shadow-text">Follow us on Instagram: @dhunkimusic</p>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+                <div class="gallery position-relative ratio ratio-16x9 overflow-hidden rounded shadow">
+                    <img src="../imgs/contact1.jpg" class="img-fluid active" alt="Contact 1">
+                    <img src="../imgs/contact2.jpg" class="img-fluid" alt="Contact 2">
+                    <img src="../imgs/contact4.jpg" class="img-fluid" alt="Contact 4">
+                    <img src="../imgs/contact5.jpg" class="img-fluid" alt="Contact 5">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-white p-4 rounded shadow-lg">
+                    <h2 class="text-rosewood mb-3">Contact Us</h2>
+                    <form action="https://formsubmit.co/dhunimusic@gmail.com" method="POST">
+                        <div class="mb-3">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name" required />
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control" placeholder="Email" required />
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-maroon px-4">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-white py-3 bg-dark">
+        &copy; 2024 Dhunki A Cappella. All rights reserved.
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const images = document.querySelectorAll(".gallery img");
+            let currentIndex = 0;
+            images[currentIndex].classList.add("active");
+
+            setInterval(() => {
+                images[currentIndex].classList.remove("active");
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add("active");
+            }, 3000);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
