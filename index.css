@@ -1,0 +1,123 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body, html {
+    height: 100%;
+    font-family: 'Calibri', sans-serif;
+    background-color: #ceb992;
+}
+
+/* Navbar */
+.nav-bar {
+    background-color: #ceb992;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #510001;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: #510001;
+  }
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    background: url('./imgs/Dhunkijeena.jpg') center/cover no-repeat;
+    filter: brightness(0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-text {
+    font-size: clamp(2.5rem, 8vw, 6rem); /* Scales between mobile and desktop */
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 10%;
+    background: linear-gradient(to right, #800000, #510001);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 0 #181923, 3px 3px 0 #c2c1c2;
+    transform: skewY(-5deg);
+    transition: transform 0.3s ease;
+}
+
+.hero-text:hover {
+    transform: skewY(0deg) scale(1.1);
+}
+
+/* Tune-in Button */
+.tune-in-button {
+    margin-top: 5%;
+    padding: 10px 20px;
+    font-size: 2.0rem;
+    color: #fff;
+    background-color: #800000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.tune-in-button:hover {
+    background-color: #510001;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Team Highlights */
+.team-card {
+    background-color: #fff;
+    color: #510001;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    width: 100%; /* Ensures consistent width */
+    max-width: 300px; /* Prevents too-wide cards */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 768px) {
+    .team-card {
+        max-width: 80%; /* Makes cards fit better on small screens */
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #ceb992;
+    padding-bottom: 10px;
+}
